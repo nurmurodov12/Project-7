@@ -7,207 +7,486 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Responsive NGO Site</title>
+    <link rel="stylesheet" href="src/output.css">
+    <title>Document</title>
 </head>
 
-<body class="bg-white">
+<body>
+    <!-- header section -->
+    <div class="container w-[1340px] mx-auto">
+        <header class="header-section w-full ">
+            <div class="header-navigation flex justify-between pt-4">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
 
-    <!-- Header -->
-    <header class="bg-white shadow">
-        <div class="container mx-auto px-5 py-4 flex flex-col md:flex-row justify-between items-center">
-            <div class="logo mb-4 md:mb-0">
-                <img src="./images/logo.png" alt="Logo" class="h-10">
+                <div class="nav-menu w-[50%]">
+                    <ul class="flex justify-evenly items-center">
+                        <li>
+                            <a class="text-black" href="# ">Home</a>
+                        </li>
+                        <li>
+                            <a class="text-[#525560] hover:text-green-400 transition ease-in-out duration-300"
+                                href="# ">About us</a>
+                        </li>
+                        <li>
+                            <a class="text-[#525560] hover:text-green-400 transition ease-in-out duration-300"
+                                href="#  ">What we Do</a>
+                        </li>
+                        <li>
+                            <a class="text-[#525560] hover:text-green-400 transition ease-in-out duration-300"
+                                href="#  ">Media</a>
+                        </li>
+                        <li>
+                            <a class="text-[#525560] hover:text-green-400 transition ease-in-out duration-300"
+                                href="#  ">Contact</a>
+                        </li>
+                        <li>
+                            <button class="bg-[#1D2130] py-[12px] px-[32px] rounded text-white">Donate</button>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <nav class="w-full md:w-auto">
-                <ul class="flex flex-col md:flex-row gap-4 md:gap-8 items-center">
-                    <li><a href="#" class="text-black font-medium hover:text-green-400 transition">Home</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-green-400 transition">About us</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-green-400 transition">What we Do</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-green-400 transition">Media</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-green-400 transition">Contact</a></li>
-                    <li><button class="bg-black text-white py-2 px-5 rounded">Donate</button></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="container mx-auto px-5 mt-10 flex flex-col lg:flex-row items-center gap-10">
-        <div class="flex-1">
-            <p class="text-gray-800 font-bold tracking-widest mb-2">KNOW ABOUT US</p>
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight">
-                We are a nonprofit team working worldwide
-            </h1>
-            <p class="text-gray-700 mb-4">
-                Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
-                posuere.
-            </p>
-            <p class="text-gray-700">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                tristique.
-                Duis cursus, mi quis viverra ornare.
-            </p>
-        </div>
-        <div class="flex-1 w-full">
-            <iframe class="w-full h-64 sm:h-80 md:h-96 rounded" src="https://www.youtube.com/embed/vya9kLEeQ6M"
-                frameborder="0" allowfullscreen></iframe>
-        </div>
-    </section>
-
-    <!-- Mission Section -->
-    <section class="bg-gray-100 py-10 mt-10">
-        <div class="container mx-auto px-5 flex flex-col md:flex-row gap-10">
-            <div class="flex-1">
-                <p class="text-gray-800 font-bold tracking-widest mb-2">OUR MISSION</p>
-                <h2 class="text-2xl sm:text-3xl font-bold mb-2">We make the world we save our own environment</h2>
-                <p class="text-gray-700">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                    tristique.
-                    Duis cursus, mi quis viverra ornare.
-                </p>
-            </div>
-            <div class="flex-1">
-                <p class="text-gray-800 font-bold tracking-widest mb-2">OUR VISION</p>
-                <h2 class="text-2xl sm:text-3xl font-bold mb-2">Plant more trees to make world air pollution free</h2>
-                <p class="text-gray-700">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                    tristique.
-                </p>
-            </div>
-        </div>
-
-        <!-- Partners -->
-        <div class="container mx-auto px-5 mt-10">
-            <p class="uppercase text-gray-800 tracking-widest mb-4">Our Supporters</p>
-            <div class="flex flex-wrap justify-around gap-4">
-                <img src="./images/Logo (1).png" alt="" class="h-12">
-                <img src="./images/Logo (2).png" alt="" class="h-12">
-                <img src="./images/Logo (3).png" alt="" class="h-12">
-                <img src="./images/Logo (4).png" alt="" class="h-12">
-                <img src="./images/Logo (5).png" alt="" class="h-12">
-                <img src="./images/Logo (6).png" alt="" class="h-12">
-            </div>
-        </div>
-    </section>
-
-    <!-- Statistic Section -->
-    <section class="bg-black text-white py-10 mt-10">
-        <div class="container mx-auto px-5 flex flex-col md:flex-row items-center gap-10">
-            <div class="flex-1">
-                <p class="uppercase tracking-widest text-gray-400 mb-2">OUR JOURNEY</p>
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">How we raised 34M</h2>
-                <p class="text-gray-400 mb-6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                    tristique.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 sm:gap-8">
-                    <div>
-                        <h4 class="text-2xl md:text-3xl font-medium">34M+</h4>
-                        <p class="text-gray-400 text-sm md:text-base">Donation Received</p>
+            <div class="home-page w-full justify-between mt-[130px]">
+                <div class="home-title">
+                    <div class="home-title-blur flex items-center gap-5">
+                        <div class="w-[72px] h-0.5 bg-[#1D2130]"></div>
+                        <p class="text-[#1D2130] font-bold">KNOW ABOUT US</p>
                     </div>
-                    <div>
-                        <h4 class="text-2xl md:text-3xl font-medium">400+</h4>
-                        <p class="text-gray-400 text-sm md:text-base">Volunteers</p>
+                    <div class="homet-title pl-30 pt-5 flex">
+                        <h1 class="font-bold text-5xl w-[624px] leading-15">We are a nonprofit team working worldwide
+                        </h1>
+                        <div class="home-subtitle pl-6">
+                            <p class="w-[496px] text-[#1D2130] font-bold text-1xl">Aenean faucibus nibh et justo cursus
+                                id rutrum lorem imperdiet. Nunc ut sem vitae risus
+                                tristique posuere.</p>
+                            <p class="w-[496px] pt-4 font-normal text-[#1D2130] ">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                                commodo diam libero vitae erat. Suspendisse varius enim elementum tristique.</p>
+                        </div>
+
                     </div>
+
+                </div>
+
+                <div class="vedio  flex justify-center  w-full h-[448px] ">
+                    <iframe class=" mt-40 w-[1200px] h-full"
+                        src="https://www.youtube.com/embed/vya9kLEeQ6M?si=SN465J3DTtX730v2" frameborder="0"></iframe>
+                </div>
+
+                <div class="mission-section w-full h-[840px] pt-[350px] bg-[#EFF7F2]">
+                    <div class="mission-intraduction flex justify-center gap-25">
+                        <div class="mission-left">
+                            <p class="text-[#1D2130] font-bold text-[16px] tracking-[2px] pb-3.5">OUR MISSION</p>
+                            <h2 class="text-[#1D2130] font-bold text-[28px] w-[496px] line-clamp-2">We make the world we
+                                save our own environment</h2>
+                            <p class="font-normal text-[#1d2130 ] w-[496px]">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                                commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                                imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                        </div>
+
+                        <div class="mission-right ">
+                            <p class="text-[#1D2130] font-bold text-[16px] tracking-[2px] pb-3.5">OUR VISION</p>
+                            <h2 class="text-[#1D2130] font-bold text-[28px] w-[496px] line-clamp-2">Plant more trees to
+                                make world air pollution free</h2>
+                            <p class="font-normal text-[#1d2130 ] w-[496px]">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                                commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                                imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                        </div>
+                    </div>
+
+                    <div class="partners-section pt-[60px] pl-20">
+                        <p class="font-medium uppercase tracking-[2px]">our Supporters</p>
+
+                        <div class="partners-imgs ml-[-40px] mt-6 flex justify-around">
+                            <img src="./images/Logo (1).png" alt="">
+                            <img src="./images/Logo (2).png" alt="">
+                            <img src="./images/Logo (3).png" alt="">
+                            <img src="./images/Logo (4).png" alt="">
+                            <img src="./images/Logo (5).png" alt="">
+                            <img src="./images/Logo (6).png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </header>
+    </div>
+
+    <!-- header section -->
+
+    <!-- main section -->
+    <div class="container">
+        <main class="main-section pt-[50px]">
+            <div class="gerb">
+                <h1 class="font-bold text-[#1D2130] text-[48px] text-center">Awards & Recognitions</h1>
+                <div class="flex justify-center gap-[200px] pt-7">
                     <div>
-                        <h4 class="text-2xl md:text-3xl font-medium">40K+</h4>
-                        <p class="text-gray-400 text-sm md:text-base">Trees planted</p>
+                        <img src="./images/gerb1.png" alt="">
+                        <h3 class="text-[#000000] font-bold text-[28px] pt-1">2021</h3>
+                        <p class="text-[#000000] font-bold  pt-1">Best NGO Award</p>
+                        <p class="text-[12px] text-[#1D2130] font-medium">Berlin, Germany</p>
+                    </div>
+
+                    <div>
+                        <img src="./images/gerb2.png" alt="">
+                        <h3 class="text-[#000000] font-bold text-[28px] pt-1">2018</h3>
+                        <p class="text-[#000000] font-bold  pt-1">Global Award</p>
+                        <p class="text-[12px] text-[#1D2130] font-medium">New York, USA</p>
+                    </div>
+
+                    <div>
+                        <img src="./images/gerb3.png" alt="">
+                        <h3 class="text-[#000000] font-bold text-[28px] pt-1">2014</h3>
+                        <p class="text-[#000000] font-bold  pt-1">Foresto Awad</p>
+                        <p class="text-[12px] text-[#1D2130] font-medium">New Delhi, India</p>
+                    </div>
+
+                    <div>
+                        <img src="./images/gerb4.png" alt="">
+                        <h3 class="text-[#000000] font-bold text-[28px] pt-1">2010</h3>
+                        <p class="text-[#000000] font-bold  pt-1">Earth Saver Award</p>
+                        <p class="text-[12px] text-[#1D2130] font-medium">Vienna, Austria</p>
                     </div>
                 </div>
             </div>
-            <div class="flex-1 flex justify-center">
-                <img src="./images/static.png" alt="Statistic" class="w-full max-w-sm sm:max-w-md md:max-w-lg rounded">
-            </div>
-        </div>
-    </section>
 
-    <!-- Team Section -->
-    <section class="container mx-auto px-5 py-10">
-        <h2 class="text-3xl font-bold text-center mb-6">Meet our team</h2>
-        <p class="text-center text-gray-700 mb-10">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-            tristique.
-        </p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-           
-            <div class="text-center">
-                <img src="./images/donate1.png" alt="" class="w-full rounded mb-2">
-                <p class="font-medium">Leonard John Davies</p>
-                <p class="text-sm text-gray-700">Cofounder, CEO</p>
-                <div class="flex justify-center gap-2 mt-2">
-                    <i class="fa-brands fa-facebook text-gray-600"></i>
-                    <i class="fa-brands fa-twitter text-gray-600"></i>
-                    <i class="fa-brands fa-linkedin text-gray-600"></i>
-                </div>
-            </div>
-            
-        </div>
-    </section>
+            <div
+                class="statistic-section container bg-black w-[1280px] h-[576px] rounded-2xl mx-auto flex items-center gap-20 mt-40">
+                <div class="statistic-left pl-15">
+                    <p class="font-bold tracking-[2px] uppercase text-white">OUR JOURNEY </p>
+                    <h2 class="text-[48px] font-bold text-white">How we raised 34M</h2>
+                    <p class="w-[488px] text-[#6b6969] ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros
+                        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo
+                        diam libero vitae erat. Aenean faucibus nibh.</p>
+                    <div class="statistic pt-10 flex gap-7">
+                        <div class=" ">
+                            <h4 class="font-medium text-[24px] text-white">34M+</h4>
+                            <p class="text-[12px] font-medium text-[#6b6969]">Donation Received</p>
+                        </div>
 
-    <!-- Events Section -->
-    <section class="container mx-auto px-5 py-10">
-        <h2 class="text-3xl font-bold mb-6">Our Events</h2>
-        <div class="flex flex-col md:flex-row gap-4">
-            <div class="bg-green-100 p-4 flex-1 flex items-center gap-4 rounded">
-                <div class="text-center">
-                    <h3 class="text-3xl font-bold">23</h3>
-                    <p class="text-gray-700">SEP</p>
-                </div>
-                <div>
-                    <p class="uppercase tracking-widest text-gray-600 mb-1">Next Event</p>
-                    <h4 class="font-bold text-lg md:text-xl">Say no to plastic usage and save the planet</h4>
-                </div>
-            </div>
-            <div class="bg-green-100 p-4 flex-1 flex items-center gap-4 rounded">
-                <div class="text-center">
-                    <h3 class="text-3xl font-bold">25</h3>
-                    <p class="text-gray-700">SEP</p>
-                </div>
-                <div>
-                    <p class="uppercase tracking-widest text-gray-600 mb-1">Next Event</p>
-                    <h4 class="font-bold text-lg md:text-xl">Weekly cleaning program</h4>
-                </div>
-            </div>
-        </div>
-    </section>
+                        <div>
+                            <h4 class="font-medium text-[24px] text-white">400+</h4>
+                            <p class="text-[12px] font-medium text-[#6b6969]">Volunters</p>
+                        </div>
 
-    <!-- Footer -->
-    <footer class="bg-black text-white py-10">
-        <div class="container mx-auto px-5 flex flex-col md:flex-row justify-between gap-10">
-            <div class="flex-1">
-                <img src="./images/white logo.png" alt="Logo" class="h-10 mb-4">
-                <p class="text-gray-400">Subscribe to get latest updates</p>
-                <div class="flex gap-2 mt-2">
-                    <input type="text" placeholder="Your email" class="p-2 rounded w-full md:w-64 text-black">
-                    <button class="bg-white text-black py-2 px-4 rounded">Subscribe</button>
+                        <div>
+                            <h4 class="font-medium text-[24px] text-white">40K++</h4>
+                            <p class="text-[12px] font-medium text-[#6b6969]">Trees planted</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="statistic-right p-">
+                    <img class="w-[710px] h-[400px] " src="./images/static.png" alt="">
                 </div>
             </div>
 
-            <div class="flex-1 flex justify-around">
-                <ul class="flex flex-col gap-2">
-                    <li><a href="#">Our team</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">What we do</a></li>
-                    <li><a href="#">Contact</a></li>
+            <div class="donater-section pt-20 w-[1280px] mx-auto">
+                <h1 class="font-bold text-5xl text-[#1D2130] text-center">Meet our team</h1>
+                <p class="text-[#1D2130] font-normal text-center pt-4">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Suspendisse <br> varius enim in eros elementum tristique.</p>
+
+                <div class="donaters w-full grid grid-cols-4 gap-7">
+                    <div class="donater w-[296px] text-center flex flex-col gap-1.5 justify-center">
+                        <img src="./images/donate1.png" class="w-[296px] object-cover rounded" alt="">
+                        <p class="text-[#1D2130] font-medium text-[20px]">Leonard John Davies</p>
+                        <p class="text-[#1D2130] text-[12px] font-medium">Cofounder, CEO</p>
+
+                        <div class="donate-social space-x-3">
+                            <i class="fa-brands fa-facebook text-[#6a6b6f]"></i>
+                            <i class="fa-brands fa-twitter text-[#6a6b6f]"></i>
+                            <i class="fa-brands fa-linkedin text-[#6a6b6f]"></i>
+                        </div>
+                    </div>
+
+                    <div class="donater w-[296px] text-center flex flex-col gap-1.5 justify-center">
+                        <img src="./images/donate2.png" class="w-[296px] object-cover rounded" alt="">
+                        <p class="text-[#1D2130] font-medium text-[20px]">Francis Weber</p>
+                        <p class="text-[#1D2130] text-[12px] font-medium">Vice Chairman</p>
+
+                        <div class="donate-social space-x-3">
+                            <i class="fa-brands fa-facebook text-[#6a6b6f]"></i>
+                            <i class="fa-brands fa-twitter text-[#6a6b6f]"></i>
+                            <i class="fa-brands fa-linkedin text-[#6a6b6f]"></i>
+                        </div>
+                    </div>
+
+                    <div class="donater w-[296px] text-center flex flex-col gap-1.5 justify-center">
+                        <img src="./images/donate3.png" class="w-[296px] object-cover rounded" alt="">
+                        <p class="text-[#1D2130] font-medium text-[20px]">Kyla Obrien</p>
+                        <p class="text-[#1D2130] text-[12px] font-medium">Head of Authority</p>
+
+                        <div class="donate-social space-x-3">
+                            <i class="fa-brands fa-facebook text-[#6a6b6f]"></i>
+                            <i class="fa-brands fa-twitter text-[#6a6b6f]"></i>
+                            <i class="fa-brands fa-linkedin text-[#6a6b6f]"></i>
+                        </div>
+                    </div>
+
+                    <div class="donater w-[296px] text-center flex flex-col gap-1.5 justify-center">
+                        <img src="./images/donate4.png" class="w-[296px] object-cover rounded" alt="">
+                        <p class="text-[#1D2130] font-medium text-[20px]">Adrian Dixon</p>
+                        <p class="text-[#1D2130] text-[12px] font-medium">Support Executive</p>
+
+                        <div class="donate-social space-x-3">
+                            <i class="fa-brands fa-facebook text-[#6a6b6f]"></i>
+                            <i class="fa-brands fa-twitter text-[#6a6b6f]"></i>
+                            <i class="fa-brands fa-linkedin text-[#6a6b6f]"></i>
+                        </div>
+                    </div>
+
+                    <div class="donater w-[296px] text-center flex flex-col gap-1.5 justify-center">
+                        <img src="./images/donate5.png" class="w-[296px] object-cover rounded" alt="">
+                        <p class="text-[#1D2130] font-medium text-[20px]">Freddy Busby</p>
+                        <p class="text-[#1D2130] text-[12px] font-medium">Project Manager</p>
+
+                        <div class="donate-social space-x-3">
+                            <i class="fa-brands fa-facebook text-[#6a6b6f]"></i>
+                            <i class="fa-brands fa-twitter text-[#6a6b6f]"></i>
+                            <i class="fa-brands fa-linkedin text-[#6a6b6f]"></i>
+                        </div>
+                    </div>
+
+                    <div class="donater w-[296px] text-center flex flex-col gap-1.5 justify-center">
+                        <img src="./images/donate6.png" class="w-[296px] object-cover rounded" alt="">
+                        <p class="text-[#1D2130] font-medium text-[20px]">Dale Banks</p>
+                        <p class="text-[#1D2130] text-[12px] font-medium">Accountatnt, Finance</p>
+
+                        <div class="donate-social space-x-3">
+                            <i class="fa-brands fa-facebook text-[#6a6b6f]"></i>
+                            <i class="fa-brands fa-twitter text-[#6a6b6f]"></i>
+                            <i class="fa-brands fa-linkedin text-[#6a6b6f]"></i>
+                        </div>
+                    </div>
+
+                    <div class="donater w-[296px] text-center flex flex-col gap-1.5 justify-center">
+                        <img src="./images/donate7.png" class="w-[296px] object-cover rounded" alt="">
+                        <p class="text-[#1D2130] font-medium text-[20px]">Miriam Middleton</p>
+                        <p class="text-[#1D2130] text-[12px] font-medium">Cofounder, CEO</p>
+
+                        <div class="donate-social space-x-3">
+                            <i class="fa-brands fa-facebook text-[#6a6b6f]"></i>
+                            <i class="fa-brands fa-twitter text-[#6a6b6f]"></i>
+                            <i class="fa-brands fa-linkedin text-[#6a6b6f]"></i>
+                        </div>
+                    </div>
+
+                    <div class="donater w-[296px] text-center flex flex-col gap-1.5 justify-center">
+                        <img src="./images/donate8.png" class="w-[296px] object-cover rounded" alt="">
+                        <p class="text-[#1D2130] font-medium text-[20px]">Ellen Walton</p>
+                        <p class="text-[#1D2130] text-[12px] font-medium">Vice Chairman</p>
+
+                        <div class="donate-social space-x-3">
+                            <i class="fa-brands fa-facebook text-[#6a6b6f]"></i>
+                            <i class="fa-brands fa-twitter text-[#6a6b6f]"></i>
+                            <i class="fa-brands fa-linkedin text-[#6a6b6f]"></i>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div
+                class="charx bg-no-repeat bg-cover  bg-center mx-auto w-[1280px] h-[384px] rounded-[12px] mt-[70px] flex flex-col justify-center items-center">
+                <h1 class="text-[48px] font-bold text-white w-[631px]">You can contribute to make the environment
+                    greener!</h1>
+                <div class="pt-5">
+                    <button class="bg-[#70C174] text-white ] py-[10px] px-52px rounded mr-3 ">Join as a
+                        volunteer</button>
+                    <button class="bg-white py-[12px] px-[32px] rounded">Donate</button>
+                </div>
+            </div>
+
+            <div class="news-section w-[1280px] mx-auto pt-20">
+                <h1 class="pb-7 font-medium text-[#1D2130] text-[48px]">Read Our News</h1>
+
+                <div class="news grid grid-cols-4">
+                    <div class="new w-[290px]">
+                        <img class="w-full h-[192px] rounded" src="./images/card-1.png " alt="">
+                        <p class="font-medium text-[22px] py-3">Don’t destroy greenery and don’t spoil scenery</p>
+                        <p class="font-normal text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            varius enim</p>
+                    </div>
+
+                    <div class="new w-[290px]">
+                        <img class="w-full h-[192px] rounded" src="./images/card-2.png " alt="">
+                        <p class="font-medium text-[22px] py-3"> Is climate change happening faster than expected?</p>
+                        <p class="font-normal text">LLorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse varius enim</p>
+                    </div>
+
+                    <div class="new w-[290px]">
+                        <img class="w-full h-[192px] rounded" src="./images/card-3.png " alt="">
+                        <p class="font-medium text-[22px] py-3">Top 10 facts about wind farms you didn't know</p>
+                        <p class="font-normal text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            varius enimm</p>
+                    </div>
+
+                    <div class="new w-[290px]">
+                        <img class="w-full h-[192px] rounded" src="./images/card-4.png " alt="">
+                        <p class="font-medium text-[22px] py-3">Our goal is to make water available for everyone </p>
+                        <p class="font-normal text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            varius enim</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="days-section w-[1280px] mx-auto pt-30">
+                <h1 class="font-medium text-4xl text-[#1D2130] pb-4">Our Events</h1>
+
+                <div class="days w-full flex gap-4">
+                    <div class="day w-[50%] h-[191px] bg-[#BEF3C0] rounded p-5 flex items-center justify-evenly mb-10">
+                        <div class="sana">
+                            <h2 class="text-5xl font-medium text-black">23 </h2>
+                            <p class="text-[16px] font-medium text-[#1D2130] ">SEP</p>
+                        </div>
+
+                        <div class="oy">
+                            <div class="oy-blurs flex items-center gap-3 mb-2.5">
+                                <p class="font-medium uppercase tracking-[2px]">NEXT EVENTS</p>
+                                <div class="oy-blur w-[44px] h-[2px] bg-[#1D2130]"></div>
+                            </div>
+
+                            <h2 class="w-[381px] font-bold text-3xl">Say no to plastic usage and save the planet</h2>
+                        </div>
+
+                        <div class="indicator">
+                            <div
+                                class="indicator-right w-14 h-14 bg-white rounded-[50%] flex items-center justify-center">
+                                <i class="fa-solid fa-caret-down rotate-270"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="day w-[50%] h-[191px] bg-[#BEF3C0] rounded p-5 flex items-center justify-evenly mb-10">
+                        <div class="sana">
+                            <h2 class="text-5xl font-medium text-black">25</h2>
+                            <p class="text-[16px] font-medium text-[#1D2130] ">SEP</p>
+                        </div>
+
+                        <div class="oy">
+                            <div class="oy-blurs flex items-center gap-3 mb-2.5">
+                                <p class="font-medium uppercase tracking-[2px]">NEXT EVENTS</p>
+                                <div class="oy-blur w-[44px] h-[2px] bg-[#1D2130]"></div>
+                            </div>
+
+                            <h2 class="w-[381px] font-bold text-3xl">Weekly cleaning program</h2>
+                        </div>
+
+                        <div class="indicator">
+                            <div
+                                class="indicator-right w-14 h-14 bg-white rounded-[50%] flex items-center justify-center">
+                                <i class="fa-solid fa-caret-down rotate-270"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- main section -->
+
+    <!-- footer section -->
+    <div class="container">
+        <footer class="footer-section bg-black w-full h-[402px] pl-30 pt-20 flex justify-evenly">
+            <div class="footer-logo">
+                <img src="./images/white logo.png" alt="">
+            </div>
+            <div class="footer-navigation text-white flex w-[30%] justify-evenly ">
+                <ul class="flex flex-col gap-6">
+                    <li>
+                        <a href="#" class="text-[16px] white">Our team</a>
+ 
+                    </li>
+                    <li>
+                        <a href="#" class="footer-li">About us</a>
+
+                    </li>
+
+                    <li>
+                        <a class="footer-li" href="#"> Team</a>
+
+                    </li>
+
+                    <li>
+                        <a class="footer-li" href="#">What we do</a>
+
+                    </li>
+
+                    <li>
+                        <a class="footer-li" href="#">Contact</a>
+                    </li>
                 </ul>
-                <ul class="flex flex-col gap-2">
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Donate</a></li>
-                    <li><a href="#">Blog</a></li>
+
+                 <ul  class="flex flex-col gap-6" >
+                    <li >
+                        <a href="#">More</a>
+                    </li>
+                    <li>
+                        <a class="footer-li" href="#">Projects</a>
+                    </li>
+
+                    <li>
+                        <a class="footer-li" href="#"> Events</a>
+                    </li>
+
+                    <li>
+                        <a class="footer-li" href="#">Donate</a>
+                    </li>
+
+                    <li>
+                        <a class="footer-li" href="#">Blog</a>
+                    </li>
                 </ul>
-                <ul class="flex flex-col gap-2">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Linkedin</a></li>
+
+                 <ul  class="flex flex-col gap-6">
+                    <li>
+                        <a href="#">Connect </a>
+
+                    </li>
+                    <li>
+                        <a class="footer-li" href="#">Facebook</a>
+
+                    </li>
+
+                    <li>
+                        <a class="footer-li" href="#"> Instagram</a>
+
+                    </li>
+
+                    <li>
+                        <a class="footer-li" href="#">Twitter</a>
+
+                    </li>
+
+                    <li>
+                        <a class="footer-li" href="#">Linkedin</a>
+                    </li>
                 </ul>
             </div>
-        </div>
-    </footer>
 
+            <div class="footer-sign">
+                <h2 class="font-bold text-[40px] text-white">Subscribe to get latest <br> updates</h2>
+
+                <input class=" w-[456px] h-[64px] border border-[#605d5d] text-[# 605d5d] mt-4 rounded bg-black " type="text" placeholder="Your email">
+                <button class="bg-white w-[136px] h-[64px] py-4 px-8 rounded ml-[-40px]">Subscribe</button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- footer section -->
 </body>
 
 </html>
